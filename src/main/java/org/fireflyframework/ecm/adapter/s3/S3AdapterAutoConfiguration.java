@@ -62,6 +62,7 @@ public class S3AdapterAutoConfiguration {
 
     @Bean
     @ConditionalOnMissingBean
+    @SuppressWarnings("deprecation")
     public S3Client s3Client(S3AdapterProperties properties, AwsCredentialsProvider credentialsProvider) {
         log.info("Configuring S3 client for region: {}, bucket: {}",
                 properties.getRegion(), properties.getBucketName());
