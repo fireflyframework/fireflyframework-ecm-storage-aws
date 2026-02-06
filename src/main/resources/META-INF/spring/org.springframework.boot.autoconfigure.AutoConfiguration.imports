@@ -1,1 +1,1 @@
-com.firefly.ecm.adapter.s3.S3AdapterAutoConfiguration
+org.fireflyframework.ecm.adapter.s3.S3AdapterAutoConfiguration

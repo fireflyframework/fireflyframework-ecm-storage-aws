@@ -5,24 +5,20 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.firefly</groupId>
-        <artifactId>lib-parent-pom</artifactId>
+        <groupId>org.fireflyframework</groupId>
+        <artifactId>fireflyframework-parent</artifactId>
         <version>1.0.0-SNAPSHOT</version>
         <relativePath/>
     </parent>
 
-    <groupId>com.firefly</groupId>
-    <artifactId>lib-ecm-storage-aws</artifactId>
+    <groupId>org.fireflyframework</groupId>
+    <artifactId>fireflyframework-ecm-storage-aws</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Firefly ECM Storage - AWS (S3)</name>
+    <name>Firefly Framework - ECM Storage - AWS (S3)</name>
     <description>Amazon S3 storage adapter implementation for Firefly ECM, published as a standalone provider library.</description>
 
-    <properties>
-        <aws-sdk.version>2.21.29</aws-sdk.version>
-        <maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
-    </properties>
 
     <dependencyManagement>
         <dependencies>
@@ -40,8 +36,8 @@
     <dependencies>
         <!-- ECM Ports -->
         <dependency>
-            <groupId>com.firefly</groupId>
-            <artifactId>lib-ecm-core</artifactId>
+            <groupId>org.fireflyframework</groupId>
+            <artifactId>fireflyframework-ecm</artifactId>
             <version>${project.version}</version>
         </dependency>
 

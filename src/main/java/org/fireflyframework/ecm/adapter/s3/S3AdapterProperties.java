@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.firefly.ecm.adapter.s3;
+package org.fireflyframework.ecm.adapter.s3;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

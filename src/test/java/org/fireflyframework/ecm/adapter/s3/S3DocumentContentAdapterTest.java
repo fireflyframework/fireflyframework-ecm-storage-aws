@@ -1,6 +1,6 @@
-package com.firefly.ecm.adapter.s3;
+package org.fireflyframework.ecm.adapter.s3;
 
-import com.firefly.core.ecm.port.document.DocumentContentPort;
+import org.fireflyframework.ecm.port.document.DocumentContentPort;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
@@ -17,7 +17,7 @@ import software.amazon.awssdk.auth.credentials.AwsBasicCredentials;
 import software.amazon.awssdk.auth.credentials.StaticCredentialsProvider;
 import software.amazon.awssdk.core.ResponseInputStream;
 import software.amazon.awssdk.core.sync.RequestBody;
-import software.amazon.awssdk.core.internal.http.AbortableInputStream;
+import software.amazon.awssdk.http.AbortableInputStream;
 import software.amazon.awssdk.services.s3.S3Client;
 import software.amazon.awssdk.services.s3.model.*;
 import software.amazon.awssdk.services.s3.presigner.S3Presigner;
@@ -165,7 +165,8 @@ ResponseInputStream<GetObjectResponse> ris = new ResponseInputStream<>(
 
     @Test
     void deleteContent_invokesDeleteObject() {
-        doNothing().when(s3Client).deleteObject(any(DeleteObjectRequest.class));
+        when(s3Client.deleteObject(any(DeleteObjectRequest.class)))
+                .thenReturn(DeleteObjectResponse.builder().build());
         contentPort.deleteContent(documentId).block();
         verify(s3Client).deleteObject(any(DeleteObjectRequest.class));
     }

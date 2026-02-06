@@ -40,5 +40,5 @@ firefly:
 # Logging Configuration for S3 Adapter
 logging:
   level:
-    com.firefly.ecm.adapter.s3: INFO
+    org.fireflyframework.ecm.adapter.s3: INFO
     software.amazon.awssdk.services.s3: WARN

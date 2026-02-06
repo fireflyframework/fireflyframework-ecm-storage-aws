@@ -1,4 +1,4 @@
-package com.firefly.ecm.adapter.s3;
+package org.fireflyframework.ecm.adapter.s3;
 
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;

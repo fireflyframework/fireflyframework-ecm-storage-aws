@@ -1,6 +1,6 @@
-package com.firefly.ecm.adapter.s3;
+package org.fireflyframework.ecm.adapter.s3;
 
-import com.firefly.core.ecm.port.document.DocumentContentPort;
+import org.fireflyframework.ecm.port.document.DocumentContentPort;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.TestPropertySource;

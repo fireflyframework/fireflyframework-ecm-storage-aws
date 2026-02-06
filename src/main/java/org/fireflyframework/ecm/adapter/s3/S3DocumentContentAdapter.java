@@ -13,11 +13,11 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.firefly.ecm.adapter.s3;
+package org.fireflyframework.ecm.adapter.s3;
 
-import com.firefly.core.ecm.adapter.AdapterFeature;
-import com.firefly.core.ecm.adapter.EcmAdapter;
-import com.firefly.core.ecm.port.document.DocumentContentPort;
+import org.fireflyframework.ecm.adapter.AdapterFeature;
+import org.fireflyframework.ecm.adapter.EcmAdapter;
+import org.fireflyframework.ecm.port.document.DocumentContentPort;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.core.io.buffer.DataBuffer;

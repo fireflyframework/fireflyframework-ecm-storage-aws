@@ -17,8 +17,8 @@ Amazon S3 storage adapter for Firefly lib‑ecm. Implements DocumentContentPort 
 ## Installation
 ```xml
 <dependency>
-  <groupId>com.firefly</groupId>
-  <artifactId>lib-ecm-storage-aws</artifactId>
+  <groupId>org.fireflyframework</groupId>
+  <artifactId>fireflyframework-ecm-storage-aws</artifactId>
   <version>${firefly.version}</version>
 </dependency>
 ```
