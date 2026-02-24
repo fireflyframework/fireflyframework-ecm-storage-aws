@@ -48,7 +48,7 @@ The adapter auto-configures via `S3AdapterAutoConfiguration` with AWS SDK v2 and
 <dependency>
     <groupId>org.fireflyframework</groupId>
     <artifactId>fireflyframework-ecm-storage-aws</artifactId>
-    <version>26.02.06</version>
+    <version>26.02.07</version>
 </dependency>
 ```
 
