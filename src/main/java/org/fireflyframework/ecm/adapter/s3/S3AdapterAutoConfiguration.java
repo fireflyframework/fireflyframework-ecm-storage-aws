@@ -47,7 +47,8 @@ public class S3AdapterAutoConfiguration {
     @Bean
     @ConditionalOnMissingBean
     public AwsCredentialsProvider awsCredentialsProvider(S3AdapterProperties properties) {
-        if (properties.getAccessKey() != null && properties.getSecretKey() != null) {
+        if (properties.getAccessKey() != null && !properties.getAccessKey().isBlank()
+                && properties.getSecretKey() != null && !properties.getSecretKey().isBlank()) {
             log.info("Using static credentials for S3 adapter");
             AwsBasicCredentials credentials = AwsBasicCredentials.create(
                     properties.getAccessKey(),
