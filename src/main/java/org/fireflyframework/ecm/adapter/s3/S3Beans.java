@@ -28,7 +28,8 @@ class S3Beans {
     }
 
     private AwsCredentialsProvider credentialsProvider(S3AdapterProperties properties) {
-        if (properties.getAccessKey() != null && properties.getSecretKey() != null) {
+        if (properties.getAccessKey() != null && !properties.getAccessKey().isBlank()
+                && properties.getSecretKey() != null && !properties.getSecretKey().isBlank()) {
             return StaticCredentialsProvider.create(
                     AwsBasicCredentials.create(properties.getAccessKey(), properties.getSecretKey())
             );
