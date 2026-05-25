@@ -1,5 +1,5 @@
 /*
- * Copyright 2024 Firefly Software Solutions Inc.
+ * Copyright 2024 Firefly Software Foundation.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,7 +53,7 @@ import java.util.UUID;
  * automatically handling large files through S3's multipart upload
  * capabilities when configured.</p>
  *
- * @author Firefly Software Solutions Inc.
+ * @author Firefly Software Foundation.
  * @version 1.0
  * @since 1.0
  */
